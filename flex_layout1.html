@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="UTF-8">
+  <title>Flex 三區塊練習</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: sans-serif;
+    }
+
+    header, footer {
+      background-color: #eee;
+      text-align: center;
+      padding: 10px;
+      font-weight: bold;
+    }
+
+    .container {
+      display: flex;
+      height: 300px;
+    }
+
+    .block {
+      flex: 1;
+      padding: 20px;
+      font-weight: bold;
+    }
+
+    .block1 { background-color: hotpink; }
+    .block2 { background-color: deepskyblue; }
+    .block3 { background-color: orange; }
+  </style>
+</head>
+<body>
+
+  <header>頁首</header>
+
+  <div class="container">
+    <div class="block block1">區塊1</div>
+    <div class="block block2">區塊2</div>
+    <div class="block block3">區塊3</div>
+  </div>
+
+  <footer>頁尾</footer>
+
+</body>
+</html>

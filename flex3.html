@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="UTF-8">
+  <title>flex3.html</title>
+  <style>
+    body {
+      font-family: sans-serif;
+    }
+
+    h2 {
+      margin-top: 40px;
+    }
+
+    .container {
+      display: flex;
+      border: 1px solid #ccc;
+      padding: 10px;
+      background-color: #f9f9f9;
+    }
+
+    .item {
+      background-color: aqua;
+      padding: 10px 20px;
+      margin: 5px;
+    }
+
+    .start     { justify-content: flex-start; }
+    .end       { justify-content: flex-end; }
+    .center    { justify-content: center; }
+    .between   { justify-content: space-between; }
+    .around    { justify-content: space-around; }
+  </style>
+</head>
+<body>
+
+  <h1>Flex 水平對齊練習</h1>
+
+  <h2>1. justify-content: flex-start</h2>
+  <div class="container start">
+    <div class="item">項目1</div>
+    <div class="item">項目2</div>
+    <div class="item">項目3</div>
+  </div>
+
+  <h2>2. justify-content: flex-end</h2>
+  <div class="container end">
+    <div class="item">項目1</div>
+    <div class="item">項目2</div>
+    <div class="item">項目3</div>
+  </div>
+
+  <h2>3. justify-content: center</h2>
+  <div class="container center">
+    <div class="item">項目1</div>
+    <div class="item">項目2</div>
+    <div class="item">項目3</div>
+  </div>
+
+  <h2>4. justify-content: space-between</h2>
+  <div class="container between">
+    <div class="item">項目1</div>
+    <div class="item">項目2</div>
+    <div class="item">項目3</div>
+  </div>
+
+  <h2>5. justify-content: space-around</h2>
+  <div class="container around">
+    <div class="item">項目1</div>
+    <div class="item">項目2</div>
+    <div class="item">項目3</div>
+  </div>
+
+</body>
+</html>

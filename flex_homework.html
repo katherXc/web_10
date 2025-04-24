@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>作業4B3G0068</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+        h1 {
+            margin-bottom: 30px;
+        }
+        .gallery {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            justify-content: space-between;
+        }
+        .flower-card {
+            width: 32%;
+            display: flex;
+            flex-direction: column;
+        }
+        .flower-title,
+        .flower-image {
+            background-color: #00ffff;
+        }
+        .flower-title {
+            padding: 15px;
+            font-size: 20px;
+            font-weight: bold;
+        }
+        .flower-image {
+            padding: 10px;
+            height: 230px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-top: 10px;
+        }
+        .flower-image img {
+            max-width: 100%;
+            max-height: 100%;
+            object-fit: contain;
+        }
+        @media (max-width: 768px) {
+            .flower-card {
+                width: 48%;
+            }
+        }
+        @media (max-width: 480px) {
+            .flower-card {
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <h1>作業</h1>
+    <div class="gallery">
+        <div class="flower-card">
+            <div class="flower-title">百合花</div>
+            <div class="flower-image">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQC49rtlIZXakIQO_sYMGO0tTVn5hnd21Csdg&s" alt="百合花">
+            </div>
+        </div>
+        <div class="flower-card">
+            <div class="flower-title">野薑花</div>
+            <div class="flower-image">
+                <img src="https://digiarch.sinica.edu.tw/images/a/plants/b015.jpg" alt="野薑花">
+            </div>
+        </div>
+        <div class="flower-card">
+            <div class="flower-title">水仙花</div>
+            <div class="flower-image">
+                <img src="https://shoplineimg.com/62cb90c69730d2004d2343f2/6628597cd447ff00205f6214/750x.jpg?" alt="水仙花">
+            </div>
+        </div>
+    </div>
+</body>
+</html>
